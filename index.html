@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bestbuy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      * { padding: 0; margin: 0; }
+      html, body, #fullheight {
+          min-height: 100% !important;
+          height: 100%;
+      }
+      body{
+        height: 100%;
+        width: 100%;
+      }
+      .mainContainer{
+        height: 100%
+      }
+      .innerContainer{
+        border:1px solid;
+        height: 100%
+      }
+      .add {
+         background: url('JD.jpg') no-repeat;
+         background-size: cover;
+      }
+
+      .products{
+        border: 1px solid red;
+        height: 100%;
+        background-size: 100% 100%;
+      }
+      .productLine{
+        height: 50%;
+      }
+      .washingMachine{
+        background: url('washingMachine.jpg') no-repeat;
+      }
+      .camera{
+        background: url('camera.jpg') no-repeat;
+      }
+      .mobile{
+        background: url('mobile.jpg') no-repeat;
+      }
+      .fridge{
+        background: url('fridge.jpg') no-repeat;
+      }
+      .tv{
+        background: url('tv.jpg') no-repeat;
+      }
+      .washingMachine{
+        background: url('oven.jpg') no-repeat;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!--main container -->
+    <div class="row mainContainer">
+      <div class="col-md-5 innerContainer add"></div>
+      <div class="col-md-7 innerContainer">
+        <div class="row productLine">
+          <div class="col-md-4 products washingMachine"></div>
+          <div class="col-md-4 products camera"></div>
+          <div class="col-md-4 products mobile"></div>
+        </div>
+        <div class="row productLine">
+          <div class="col-md-4 products fridge"></div>
+          <div class="col-md-4 products tv"></div>
+          <div class="col-md-4 products oven"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
